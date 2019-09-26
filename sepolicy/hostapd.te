@@ -1,3 +1,4 @@
 # Reading from /persist/wifi/.macaddr
-allow hostapd persist_file:dir r_dir_perms;
-r_dir_file(hostapd, persist_wifi_file)
+#allow hostapd persist_file:dir r_dir_perms;
+allow hal_wifi_hostapd hostapd_data_file:dir r_dir_perms;
+r_dir_file(hal_wifi_hostapd, persist_wifi_file)

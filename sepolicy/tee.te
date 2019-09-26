@@ -1,3 +1,4 @@
+
 allow tee self:process execmem;
 
 # /data/misc/playready labeling
@@ -27,3 +28,4 @@ allow tee block_device:dir search;
 allow tee self:capability sys_rawio;
 allow tee drm_block_device:blk_file rw_file_perms;
 allow tee ssd_block_device:blk_file rw_file_perms;
+
